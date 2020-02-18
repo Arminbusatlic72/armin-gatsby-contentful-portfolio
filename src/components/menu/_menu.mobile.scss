@@ -1,0 +1,10 @@
+@import "../../styles/mixins.scss";
+// wide screens
+@include mediaXL {
+}
+// Desktops and Laptops
+@include mediaLg {
+}
+// Small Laptops and Tablets
+@include mediaMd {
+}

@@ -1,0 +1,12 @@
+@import "../../styles/variables.scss";
+
+.icons {
+  padding-top: 1rem;
+  a {
+    padding: 0.4rem;
+    &:hover {
+      color: $secondary-color;
+      @include easeOut();
+    }
+  }
+}

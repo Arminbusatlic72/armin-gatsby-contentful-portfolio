@@ -1,0 +1,54 @@
+@import "../styles/variables.scss";
+@import "./index.mobile";
+h1,
+h2,
+h3 {
+  &.lg_heading {
+    font-size: 6rem;
+  }
+  &.sm_heading {
+    font-family: Special elite;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 2), 0.5);
+  }
+}
+.sm_heading__wrapper {
+  width: 300px;
+  transform: skewY(2deg);
+  background-color: #000;
+}
+.text_secondary {
+  color: $secondary-color;
+}
+.home {
+  overflow: hidden;
+
+  h1 {
+    margin-top: 20vh;
+  }
+}
+// Small Laptops and Tablets
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+    .lg_heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+}
+// Smart Phones
+@include mediaSm {
+  main {
+    h1.lg_heading {
+      margin-top: 10vh;
+      font-size: 3rem;
+    }
+    .sm_heading__wrapper {
+      width: 240px;
+    }
+  }
+}
