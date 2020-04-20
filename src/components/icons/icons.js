@@ -1,5 +1,6 @@
 import React from "react"
 import Cofee from "./cofee"
+import Facebook from "./facebook"
 import iconStyles from "./icons.module.scss"
 
 const Icons = () => {
@@ -9,7 +10,7 @@ const Icons = () => {
         <Cofee />
       </a>
       <a href="#">
-        <Cofee />
+        <Facebook />
       </a>
       <a href="#">
         <Cofee />
