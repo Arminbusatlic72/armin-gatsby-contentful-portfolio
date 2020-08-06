@@ -1,6 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import blogStyles from "./blog.module.scss"
+import Bcg from '../images/typing-machine-bcg-blue.png'
+import Img from 'gatsby-image'
 
 import Layout from "../components/layout/layout"
 
@@ -13,10 +16,22 @@ export const query = graphql`
         json
       }
     }
+    image: file(relativePath: { eq: "typing-machine-bcg-blue.png" }) {
+      childImageSharp {
+        
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
 const Blog = props => {
+
+
+
+
   const options = {
     renderNode: {
       "embedded-asset-block": node => {
@@ -28,13 +43,21 @@ const Blog = props => {
   }
   return (
     <Layout>
-      <main>
-        <h1>{props.data.contentfulBlogPost.title}</h1>
-        <p>{props.data.contentfulBlogPost.publishedDate}</p>
-        {documentToReactComponents(
-          props.data.contentfulBlogPost.body.json,
-          options
-        )}
+      <main >
+
+        <div className={blogStyles.blog_container}>
+          <h1 className={blogStyles.blog_heading}>{props.data.contentfulBlogPost.title}</h1>
+          <p className={blogStyles.blog_paragraph}>{props.data.contentfulBlogPost.publishedDate}</p>
+          {documentToReactComponents(
+            props.data.contentfulBlogPost.body.json,
+            options
+          )}
+        </div>
+        <div className={blogStyles.blog_bcg}>
+          <img className={blogStyles.img} src={Bcg} />
+
+          {/* <Img className={blogStyles.img} fluid={props.data.image.childImageSharp.fluid} /> */}
+        </div>
       </main>
     </Layout>
   )

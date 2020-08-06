@@ -50,14 +50,18 @@ class Menu extends React.Component {
             </li>
             <li className={menuStyles.nav_item}>
               <Link to="/projects" activeStyle={activeStyle}>
-                {" "}
-                Projects{" "}
+
+                Projects
               </Link>
             </li>
             <li className={menuStyles.nav_item}>
               <Link to="/blog" activeStyle={activeStyle}>
-                {" "}
-                Blog{" "}
+                Blog
+              </Link>
+            </li>
+            <li className={menuStyles.nav_item}>
+              <Link to="/contact" activeStyle={activeStyle}>
+                Contact
               </Link>
             </li>
           </ul>

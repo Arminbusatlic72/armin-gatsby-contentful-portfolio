@@ -1,0 +1,63 @@
+
+.blog_heading {
+    color: #000!important;
+   } 
+.blog_paragraph {
+    color: #000!important;
+}
+.blog_container {
+    position: relative;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-top:50px;
+    padding-bottom:30px;
+
+    margin-right: auto;
+    margin-left: auto;
+    background: url('../images/paper-bg-white.png');
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: auto;
+    width: 60%;
+    height: 50%;
+    position: absolute;
+    top: 18%;
+    left: 22%;
+    overflow-y: auto;
+    p,h3 {
+        color: #000!important;
+    }
+    
+    
+}
+.blog_bcg {
+    pointer-events: none;
+    z-index: 1;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    // background: url('../images/typing-machine-bcg.png');
+    height: 40%;
+    width: 100%;
+    margin: 0 auto;
+    
+    // background-position:center;
+    @media only screen and (max-width: 600px) {
+        // height: 200px;
+    
+    //  background-position: center bottom;
+    }
+    @media only screen and (max-width: 768px) {
+        // background-position: center bottom;
+
+    }
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain; 
+   
+    
+}
+.img {
+    height: 100%;
+    width: 100%;
+}

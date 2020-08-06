@@ -12,14 +12,14 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Full-stack-bootcamp",
+    title: "Armin Bušatlić portfolio",
     author: "Armin Busatlic",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     `gatsby-plugin-react-helmet`,
-
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-contentful`,
@@ -46,8 +46,16 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: "src",
-        path: `${__dirname}/src/`,
+        name: "posts",
+        path: `${__dirname}/src/posts`,
+      },
+    },
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "images",
+        path: `${__dirname}/src/images`,
       },
     },
     {
@@ -60,7 +68,11 @@ module.exports = {
           },
           {
             family: `Special Elite`,
-            variants: [`regular 400`, `400`, `700`],
+            variants: [`regular 400`, `500`, `700`],
+          },
+          {
+            family: "Reenie Beanie",
+            variants: [`400`],
           },
         ],
       },

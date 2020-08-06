@@ -1,27 +1,60 @@
 @import "../styles/variables.scss";
+ol {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
 .posts {
   list-style-type: none;
   margin: 0;
 }
+.text__wrapp {
+  
+  height: 100%;
+  width: 100%;
+  padding: 3rem;
+    background-image: url('../images/paper.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: contain;
+    
+
+}
 .post {
-  margin: 1rem 0;
-  a {
-    background: $primary-color;
-    color: #0000;
+  
+  h2,p {
+    text-align: center;
     display: block;
-    padding: 1rem;
+    margin: 60px auto;
+    color: #000;
+  }
+  
+  flex: 1 0 30%;
+  margin: 1rem;
+  background:url('../images/paper-bg-white.png');
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: auto;
+    height: 500px;
+  @media only screen and (max-width: 600px) {
+    height: 260px;
+  }
+    color: #000;
+    display: block;
     text-decoration: none;
+    border: 1px solid transparent;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     &:hover,
     &:focus {
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
         0 10px 10px rgba(0, 0, 0, 0.22);
       border: 1px solid #dede;
-      border-radius: 5px;
+      border-radius: 12px;
       @include easeOut;
-    }
-    h2 {
-      margin-bottom: 0;
-    }
+  
+    
   }
 }
