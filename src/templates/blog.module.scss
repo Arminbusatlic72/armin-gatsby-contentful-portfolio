@@ -14,31 +14,45 @@
 
     margin-right: auto;
     margin-left: auto;
-    background: url('../images/paper-bg-white.png');
+    // background: url('../images/paper-bg-white.png');
     background-repeat: repeat;
     background-position: center center;
     background-attachment: scroll;
     background-size: auto;
-    width: 60%;
+    width: 45%;
+    // width: 90%;
     height: 50%;
     position: absolute;
     top: 18%;
-    left: 22%;
+    left: 32%;
+    // left: 10%;
+    @media only screen and (max-width: 600px) {
+        
+        width: 83%;
+        height: 50%;
+        position: absolute;
+        top: 18%;
+        left: 11%;
+    }
     overflow-y: auto;
-    p,h3 {
+    p,h3,h1 {
+        font-size: 1rem;;
         color: #000!important;
+    }
+    h1,h3 {
+        text-transform: uppercase;
     }
     
     
 }
 .blog_bcg {
     pointer-events: none;
-    z-index: 1;
+    z-index: -1;
     position: fixed;
     bottom: 0px;
     left: 0px;
     // background: url('../images/typing-machine-bcg.png');
-    height: 40%;
+    height: 100%;
     width: 100%;
     margin: 0 auto;
     

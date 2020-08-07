@@ -16,7 +16,7 @@ export const query = graphql`
         json
       }
     }
-    image: file(relativePath: { eq: "typing-machine-bcg-blue.png" }) {
+    image: file(relativePath: { eq: "blog-bcg.png" }) {
       childImageSharp {
         
         fluid {
@@ -54,9 +54,9 @@ const Blog = props => {
           )}
         </div>
         <div className={blogStyles.blog_bcg}>
-          <img className={blogStyles.img} src={Bcg} />
+          {/* <img className={blogStyles.img} src={Bcg} /> */}
 
-          {/* <Img className={blogStyles.img} fluid={props.data.image.childImageSharp.fluid} /> */}
+          <Img className={blogStyles.img} fluid={props.data.image.childImageSharp.fluid} />
         </div>
       </main>
     </Layout>
