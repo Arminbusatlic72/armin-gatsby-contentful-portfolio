@@ -14,7 +14,9 @@ const Head = (props, { title }) => {
     `)
     return (
         <Helmet
+
             title={`${title} | ${data.site.siteMetadata.title}`}
+
 
         >{props.children}</Helmet>
     )
