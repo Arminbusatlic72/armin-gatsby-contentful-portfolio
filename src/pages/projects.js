@@ -1,9 +1,9 @@
 import React from "react"
-import Layout from "../components/layout/layout"
-import Project from "../components/project/project"
+import Layout from "../components/layout/Layout"
+import Project from "../components/project/Project"
 import projectsStyles from "./projects.module.scss"
 import Icon from '../images/icons/github.png'
-import Head from '../components/head/head'
+import Head from '../components/head/Head'
 
 
 

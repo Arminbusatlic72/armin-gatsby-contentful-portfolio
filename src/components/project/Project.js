@@ -1,7 +1,7 @@
 import React from 'react'
 import projectStyles from "./project.module.scss"
-import ProjectInfo from "./projectInfo"
-import Button from "../button/button"
+import ProjectInfo from "./ProjectInfo"
+import Button from "../button/Button"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from 'gatsby'
 import Zoom from 'react-reveal/Zoom';

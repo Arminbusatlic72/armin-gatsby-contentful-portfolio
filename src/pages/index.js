@@ -1,8 +1,8 @@
 import React from "react"
-import Layout from "../components/layout/layout"
-import Head from '../components/head/head'
+import Layout from "../components/layout/Layout"
+import Head from '../components/head/Head'
 import indexStyles from "./index.module.scss"
-import Bounce from 'react-reveal/bounce';
+import Bounce from 'react-reveal/Bounce';
 import { Link } from 'gatsby'
 
 // Inside your component

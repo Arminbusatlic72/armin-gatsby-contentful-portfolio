@@ -3,10 +3,8 @@ import { graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import blogStyles from "./blog.module.scss"
 import Img from 'gatsby-image'
-import Head from '../components/head/head'
-
-
-import Layout from "../components/layout/layout"
+import Head from '../components/head/Head'
+import Layout from "../components/layout/Layout"
 
 export const query = graphql`
   query($slug: String!) {

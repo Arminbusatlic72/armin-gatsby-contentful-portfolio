@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import Layout from "../components/layout/layout"
-import Head from '../components/head/head'
+import Layout from "../components/layout/Layout"
+import Head from '../components/head/Head'
 
 import Styles from './404.module.scss'
 const NotFound = () => {
