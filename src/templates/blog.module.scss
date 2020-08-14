@@ -12,13 +12,13 @@
     padding-top:50px;
     padding-bottom:30px;
 
-    margin-right: auto;
-    margin-left: auto;
-    // background: url('../images/paper-bg-white.png');
-    background-repeat: repeat;
-    background-position: center center;
-    background-attachment: scroll;
-    background-size: auto;
+    // margin-right: auto;
+    // margin-left: auto;
+    // // background: url('../images/paper-bg-white.png');
+    // background-repeat: repeat;
+    // background-position: center center;
+    // background-attachment: scroll;
+    // background-size: auto;
     width: 45%;
     // width: 90%;
     height: 50%;
@@ -54,21 +54,6 @@
     // background: url('../images/typing-machine-bcg.png');
     height: 100%;
     width: 100%;
-    margin: 0 auto;
-    
-    // background-position:center;
-    @media only screen and (max-width: 600px) {
-        // height: 200px;
-    
-    //  background-position: center bottom;
-    }
-    @media only screen and (max-width: 768px) {
-        // background-position: center bottom;
-
-    }
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: contain; 
-   
     
 }
 .img {

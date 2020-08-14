@@ -1,9 +1,10 @@
+@import '../../styles/mixins.scss';
 .project__info_wrapp {
     position: absolute;
     top: 0;
     left: 0;
     text-align:center;
-    padding: 2rem;
+    padding: 0.7rem;
   height: 100%;
   width: 100%;
   background: #eece1a;
@@ -17,9 +18,23 @@
   transition: .45s ease-in-out;
   h3,p {
     color:#444;
+   
+    }
+   
+  h3 {
+    @include mediaMd {
+      font-size: 1rem;
+    }
+
   }
- 
-}
+  p {
+    @include mediaMd {
+      font-size: 0.9rem;
+    }
+
+  }
+  }
+  
 .project__info_wrapp:hover {
         opacity: 1;
     }   

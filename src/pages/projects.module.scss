@@ -1,4 +1,23 @@
+@import '../styles/mixins.scss';
 .projects__wrapp {
   display: flex;
   flex-wrap: wrap;
+}
+.heading__wrapp {
+  display: flex;
+  justify-content: space-between;
+  @include mediaSm {
+    display: block;
+  }
+
+  h1,a {
+    // margin: 0.5rem;
+    display: inline-block;
+  }
+  a {
+  @include mediaSm {
+    
+    display: none;
+  }
+}
 }

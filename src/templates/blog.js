@@ -2,8 +2,9 @@ import React from "react"
 import { graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import blogStyles from "./blog.module.scss"
-import Bcg from '../images/typing-machine-bcg-blue.png'
 import Img from 'gatsby-image'
+import Head from '../components/head/head'
+
 
 import Layout from "../components/layout/layout"
 
@@ -43,6 +44,7 @@ const Blog = props => {
   }
   return (
     <Layout>
+      <Head title={props.data.contentfulBlogPost.title} />
       <main >
 
         <div className={blogStyles.blog_container}>
@@ -54,7 +56,7 @@ const Blog = props => {
           )}
         </div>
         <div className={blogStyles.blog_bcg}>
-          {/* <img className={blogStyles.img} src={Bcg} /> */}
+
 
           <Img className={blogStyles.img} fluid={props.data.image.childImageSharp.fluid} />
         </div>

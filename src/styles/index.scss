@@ -664,3 +664,13 @@ main {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
+.leaflet-container {
+ 
+  @media only screen and (max-width: 1170px) {
+    height: 350px;
+    width: 100%;
+  }
+  z-index: 0;
+    height: 450px;
+    width: 35%;
+  }

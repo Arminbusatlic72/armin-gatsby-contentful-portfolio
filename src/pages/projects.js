@@ -1,7 +1,10 @@
 import React from "react"
-import Layout from "../components/layout/Layout"
-import Project from "../components/project/Project"
+import Layout from "../components/layout/layout"
+import Project from "../components/project/project"
 import projectsStyles from "./projects.module.scss"
+import Icon from '../images/icons/github.png'
+import Head from '../components/head/head'
+
 
 
 
@@ -10,8 +13,12 @@ const ProjectsPage = () => {
   return (
     <div>
       <Layout>
+        <Head title="Projects" />
         <main>
-          <h1>Projects Page </h1>
+          <div className={projectsStyles.heading__wrapp}>
+            <h1>Recent projects</h1>
+            <a href="https://github.com/Arminbusatlic72" target="_blank" rel="noopener noreferrer"><img src={Icon} alt="githubIcon" /></a>
+          </div>
           <div className={projectsStyles.projects__wrapp}>
 
 

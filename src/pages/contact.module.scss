@@ -1,3 +1,12 @@
+@import "../styles/variables.scss";
 h3 {
     font-weight: 200;
+    color: $secondary-color;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: 1170px) {
+        flex-direction: column;
+    }
 }
