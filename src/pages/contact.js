@@ -1,10 +1,10 @@
 import React from 'react';
 import contactStyle from './contact.module.scss';
-import Layout from '../components/layout/Layout'
-import ContactForm from '../components/contactForm/ContactForm'
+import Layout from '../components/layout/Layout';
+import ContactForm from '../components/contactForm/ContactForm';
 import Bounce from 'react-reveal/Bounce';
-import MyMap from '../components/map/Map'
-import Head from '../components/head/Head'
+import MyMap from '../components/map/Map';
+import Head from '../components/head/Head';
 
 
 
