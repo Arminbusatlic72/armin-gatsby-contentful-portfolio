@@ -46,13 +46,15 @@ const IndexPage = () => {
               <div style={{ display: 'inline-block' }}> Armin,</div>
             </Bounce>
           </h2>
-          <Bounce left cascade>
-
-            <h2 className={indexStyles.sm_heading}>I am Front end Developer</h2>
 
 
-
-          </Bounce>
+          <h2 className={indexStyles.sm_heading}>
+            <Bounce left cascade>
+              <div style={{ display: 'inline-block' }}>I am </div>
+            </Bounce> <Bounce right cascade>
+              <div style={{ display: 'inline-block' }}>Front end Developer</div>
+            </Bounce>
+          </h2>
           <Link className={indexStyles.btn__rounded} to='/projects'>Projects</Link>
         </main>
       </Layout>
