@@ -1,51 +1,44 @@
-@import '../../styles/mixins.scss';
+@import "../../styles/mixins.scss";
 .img {
   height: 100%;
   width: 100%;
   -webkit-transform: scale(1);
-transform: scale(1);
--webkit-transition: .45s ease-in-out;
-transition: .45s ease-in-out;
+  transform: scale(1);
+  -webkit-transition: 0.45s ease-in-out;
+  transition: 0.45s ease-in-out;
 }
 .project__wrapp {
-  
-    position: relative; 
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 1rem;
-   
-    @include mediaMd {
-      width: 45%;
-      margin: 0.5rem;
-      height: 185px;
-      
+  position: relative;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1rem;
 
-    }
-    @include mediaLg {    
+  @include mediaMd {
+    width: 45%;
+    margin: 0.5rem;
+    height: 185px;
+  }
+  @include mediaLg {
     width: 47%;
     margin: 0.5rem;
     height: 250px;
-    
-
+  }
+  @include mediaXL {
+    width: 31%;
+    margin: 0.5rem;
+    height: 250px;
+  }
+  @include mediaSm {
+    width: 100%;
+    height: 190px;
+  }
+  &:hover {
+    .project__info_wrapp {
+      opacity: 1;
     }
-    @include mediaXL {
-        width: 32%;
-        margin: 0.5rem;
-        height: 250px;
-    }
-    @include mediaSm {
-      width: 100%;
-      height: 190px;
-    }
-    &:hover {
-        .project__info_wrapp {
-            opacity: 1;
-        }   
     .img {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-        }
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
     }
+  }
 }
- 
-
